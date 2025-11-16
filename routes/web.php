@@ -122,6 +122,8 @@ Route::prefix('admin-panel')->name('admin.')->group(function () {
         Route::get('/contact-messages', [ContactMessageController::class, 'index'])->name('contact.index');
         Route::get('/contact-messages/{id}', [ContactMessageController::class, 'show'])->name('contact.show');
         Route::delete('/contact-messages/{id}', [ContactMessageController::class, 'destroy'])->name('contact.destroy');
+        
+        // Route::delete('/contact-messages/{id}', [ContactMessageController::class, 'destroy'])->name('contact.destroy');
 
 
     });
